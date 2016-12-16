@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="Author" content="午后的阳光制作">
+    <title></title>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="pjs_01.js"></script>
+    <style type="text/css">
+        #bigDiv{
+            width: 1080px;;
+            margin: 0px auto;/*div网页居中*/
+            background-color: #494949;
+			color:#FFFFFF
+        }
+        h1{
+			text-align: center;/*文本居中*/
+			padding-top: 10px;
+        }
+        #first,#second,#third{
+            width: 360px;
+            height: 360px;
+            font-size: 150px;
+            line-height: 360px;
+            text-align: center;
+            float: left;/*让三个盒子左浮动*/
+        }
+        #first{
+	background-color: #009BFF;
+	opacity: 0.9;
+        }
+        #second{
+	background-color: #007CCC;
+        }
+        #third{
+	background-color: #005388;
+        }
+        input {
+
+            font-size: 30px;
+            font-weight: 900;
+        }
+        #start{
+            margin-left: 40%;
+            margin-right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="bigDiv">
+        <h1>Gei群三周年抽奖活动</h1>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+        <input type="button" value="开始" id="start"/>
+        <input type="button" value="停止" id="stop" disabled="disabled"/>
+    </div>
+</body>
+</html>
