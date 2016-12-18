@@ -13,11 +13,7 @@ function sjs(range) {
 /*对显示随机数的方法进行封装*/
 function showRandomNum() {
     var figure=sjs(range);
-    $("#first").html(figure);
-    var figure2=sjs(range);
-    $("#second").html(figure2);
-    var figure3=sjs(range);
-    $("#third").html(figure3);
+    $("#second").html(figure);
 }
 $(function () {
     /*点击开始按钮,产生的事件*/
@@ -25,7 +21,7 @@ $(function () {
         /*将开始标签禁用，停止标签启用*/
         $("#start")[0].disabled=true;
         $("#stop")[0].disabled=false;
-        range=prompt("请输入随机数范围：","");
+        range=prompt("参加活动的GEI数：","");
         myNumber=setInterval(showRandomNum,1);//多长时间运行一次
     });
     /*点击结束按钮*/
